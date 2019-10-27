@@ -17,13 +17,13 @@
       <div class="container">
         <div class="row justify-content-center text-center">
             <div class="row">
-                <div class="col-md-9">
+                <div class="col-md-9 justify-content-center">
                     <?php
-                        include 'config.php';
+                        include_once 'config.php';
                         $eventTables = $conn->query( "SELECT * FROM event") or die( $conn->error);
                     ?>
                     <div class="row justify-content-center">
-                        <table class="table">
+                        <table class="table table-striped">
                             <thead>
                                 <tr >
                                     <th class="text-center">Name</th>
@@ -38,9 +38,9 @@
                                     <td class="text-left"><?php echo $row['description'];?></td>
                                     <td><?php echo $row['date'];?></td>
                                     <td>
-                                        <a href="events.php?use=<?php echo $row['eventid']; ?>" class="btn btn-primary">Use</a>
+                                        <a href="registerAdDU.php?use=<?php echo $row['eventid']; ?>" class="btn btn-primary">Use</a>
                                         <a href="events.php?view=<?php echo $row['eventid']; ?>" class="btn btn-info">View</a>
-                                        <a href="event_add.php?delete=<?php echo $row['eventid']; ?>" class="btn btn-danger">Delete</a>
+                                        <a href="processEvent.php?delete=<?php echo $row['eventid']; ?>" class="btn btn-danger">Delete</a>
                                     </td>
                                 </tr>
                             <?php endwhile; ?>
@@ -49,9 +49,9 @@
                 </div>
                 <div class="col-md-3">
                     <?php 
-                        require_once 'event_add.php'; 
+                        require_once 'processEvent.php'; 
                     ?>
-                    <form action="event_add.php" method="POST">
+                    <form action="processEvent.php" method="POST">
                         <div class="form-group">
                             <label for="name">Event Name</label>
                             <input type="text" class="form-control" placeholder="Enter event name" name="name" >
