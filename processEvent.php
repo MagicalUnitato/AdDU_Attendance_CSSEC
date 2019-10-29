@@ -46,6 +46,24 @@ if( isset($_POST['save'])){
     header("location: events.php");
 }
 
+if( isset($_POST['update'])){
+    
+    echo "Updating";
+    
+    $eventid = $_POST['eventid'];
+    $eventname = $_POST['name'];
+    $desc = mysql_real_escape_string($_POST['desc']);
+    $date = DateTime::createFromFormat( 'm-d-Y', $_POST['date'] )->format( 'Y-m-d' );
+    
+    
+    $sql = "UPDATE event SET name='$eventname', description='$desc', date='$date' WHERE eventid='$eventid'";
+    
+    $result = $conn->query( $sql ) or die( $conn->error );
+    
+    header( "Location: viewEvent.php?view=$eventid");
+    
+}
+
 if( isset($_GET['delete'])){
     
     $id = $_GET['delete'];

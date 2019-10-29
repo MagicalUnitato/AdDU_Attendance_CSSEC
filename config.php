@@ -4,11 +4,13 @@
     $dbuser="root";
     $dbpass="usbw";
     $dbname="testdb";
-    $adduAPIKey = "test";
 
-    $conn = mysqli_connect($dbhost,$dbuser,$dbpass);
+    $conn = mysqli_connect($dbhost,$dbuser,$dbpass) or die( $conn->error );
     mysqli_select_db( $conn, $dbname);
- 
-    if( !$conn )
-       die( 'Could not connect to MySQL: ' . mysqli_error());
     
+    if( isset($_GET['eventcode'])){
+        session_start();
+        $_SESSION['eventcode'] = filter_input( INPUT_GET, 'eventcode', FILTER_SANITIZE_SPECIAL_CHARS);
+        header("Location: events.php");
+        
+    }
