@@ -1,10 +1,4 @@
-#AdDU Attendance CSSEC
 
-Ateneo de Davao Attendance System </br>
+#AdDU Attendance CSSEC Front End Concept
 
-(FRONT END DESIGN)
-How to Setup: </br>
-1.Put files in USBWebserverFolder\root </br>
-2.Create a database called "testdb" </br>
-3.Launch! </br>
-(FRONT END DESIGN)
+** THIS IS THE FROND END CONCEPT FOR THE ATTENDANCE **
