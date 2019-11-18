@@ -1,4 +1,7 @@
+# AdDU_Attendance_CSSEC (Front End)
 
-#AdDU Attendance CSSEC Front End Concept
+This is the Front End Implementation of the Attendance Page for AdDU CSSEC to be used during IT Week and future events.
 
-** THIS IS THE FROND END CONCEPT FOR THE ATTENDANCE **
+## Getting Started
+
+Clone the files in your respective servers and make a database called testdb and a table called events with 4 columns. Comments are added in the code.
