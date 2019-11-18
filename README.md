@@ -1,5 +1,7 @@
-#AdDU_Attendance_CSSEC
+#AdDU Attendance CSSEC
+
 Ateneo de Davao Attendance System </br>
+
 (FRONT END DESIGN)
 How to Setup: </br>
 1.Put files in USBWebserverFolder\root </br>
