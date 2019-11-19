@@ -1,10 +1,7 @@
-#AdDU Attendance CSSEC
+# AdDU_Attendance_CSSEC (Front End)
 
-Ateneo de Davao Attendance System </br>
+This is the Front End Implementation of the Attendance Page for AdDU CSSEC to be used during IT Week and future events.
 
-(FRONT END DESIGN)
-How to Setup: </br>
-1.Put files in USBWebserverFolder\root </br>
-2.Create a database called "testdb" </br>
-3.Launch! </br>
-(FRONT END DESIGN)
+## Getting Started
+
+Clone the files in your respective servers and make a database called testdb and a table called events with 4 columns. Comments are added in the code.
