@@ -2,7 +2,7 @@
 
     $dbhost="127.0.0.1";
     $dbuser="root";
-    $dbpass="";
+    $dbpass="usbw";
     $dbname="testdb";
 
     $conn = mysqli_connect($dbhost,$dbuser,$dbpass) or die( $conn->error );

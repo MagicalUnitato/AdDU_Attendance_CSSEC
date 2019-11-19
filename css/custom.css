@@ -1,7 +1,23 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url("../fonts/Roboto-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Thin";
+  src: url("../fonts/Roboto-Thin.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("../fonts/Roboto-Bold.ttf") format("truetype");
+}
+.navbar-brand{
+    font-family:"Roboto-Bold";
+}
 .navbar-default{
     background-color:#7b1fa2;
     color:#FFFFFF;
-}
-.navbar-brand{
-    font-family:"Roboto";
 }

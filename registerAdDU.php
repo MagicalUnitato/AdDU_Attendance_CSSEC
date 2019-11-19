@@ -32,9 +32,6 @@
                           <a class="nav-link" href="index.php">Home</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link" href="events.php">Event</a>
-                      </li>
-                      <li class="nav-item">
                           <a class="nav-link" href="registerAdDU.php">Attendance</a>
                       </li>
                   </ul>
